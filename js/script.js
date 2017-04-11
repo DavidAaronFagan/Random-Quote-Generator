@@ -57,13 +57,13 @@ function printQuote(){
   var answer = getRandomQuote();
   var message = '<p class="quote">' + answer.phrase + '</p>';
   message += '<p class="source">' + answer.source ;
-    if ( answer.citation !== null) {
+    if ( answer.citation ) {
     message += '<span class="citation">' + answer.citation + '</span>';
     }
-    if ( answer.year != null) {
+    if ( answer.year ) {
     message += '<span class="year">' + answer.year + '</span>';
     }
-    if ( answer.state != null) {
+    if ( answer.state ) {
     message += '<span class="tag">' + ', ' + answer.state + '</span>';
     }
   message += '</p>';
